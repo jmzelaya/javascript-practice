@@ -1,5 +1,5 @@
+/*THIS IS WHERE I COMPLETE ALL OF THE EXERCISES
+  FOR CODESCHOOL'S JAVASCRIPT ROADTRIP PART 2 */
 
-$(document).ready(function (){
 
-  console.log('test');
-});
+  
