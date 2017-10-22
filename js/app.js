@@ -69,9 +69,9 @@ if( parkIsOpen ){
 }
 
 
-//-------------------------------------//
-//--PROBLEM SOLVING WITH CONDITIONALS--//
-//-------------------------------------//
+//-----------------------------------------//
+//--2.5 PROBLEM SOLVING WITH CONDITIONALS--//
+//-----------------------------------------//
 
 
 /* Back at Death Valley, scientists could see that the Sheep Situation would
@@ -96,6 +96,7 @@ var monthsToPrint = 12;
 for (var monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
 
   //if the number of sheep (numSheep) is greater than or equal to 10,000
+  //if the number of sheep is less than 10,000 ignore this block 
   if(numSheep >= 10000 ) {
 
     //Divide the number of sheep by half
