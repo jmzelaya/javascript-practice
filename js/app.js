@@ -19,9 +19,10 @@ printed if it is even. Your results should be the even numbers from
 might decide if a number is even… */
 
 
+console.log("EXCERCISE 2.2 HERE---->");
+
 var num = 10;
 
-console.log("EXCERCISE 2.2 HERE---->");
 //as long as num is greater than 0
 while (num > 0) {
   //Check if num is even
@@ -54,8 +55,10 @@ OR
 
 Sorry, the Badlands are particularly bad today. We're closed! */
 
+console.log("EXCERCISE 2.3 HERE---->");
 
 var parkIsOpen = true;
+
 
 // If parkIsOpen is true
 if( parkIsOpen ){
@@ -69,6 +72,7 @@ if( parkIsOpen ){
   //show THIS message instead
 	console.log("Sorry, the Badlands are particularly bad today. We're closed!");
 }
+console.log("<----END EXCERCISE 2.3");
 
 
 //-----------------------------------------//
@@ -89,6 +93,7 @@ Removing <number> sheep from the population.
 Note: To complete the challenge, you only need to insert the if statement.
 You do not need to create an else statement or change any of the provided code.*/
 
+console.log("EXCERCISE 2.5 HERE---->");
 
 var numSheep = 4;
 var monthsToPrint = 12;
@@ -115,3 +120,4 @@ for (var monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
   console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
   //Start the loop again until the middle condition is false.
 }
+console.log("<----END EXCERCISE 2.5");
