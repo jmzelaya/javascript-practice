@@ -21,6 +21,7 @@ might decide if a number is even… */
 
 var num = 10;
 
+console.log("EXCERCISE 2.2 HERE---->");
 //as long as num is greater than 0
 while (num > 0) {
   //Check if num is even
@@ -34,6 +35,7 @@ while (num > 0) {
    	num--;
     //Go back an check is while condition is still true.
 }
+console.log("<----END EXCERCISE 2.2");
 
 
 
@@ -96,7 +98,7 @@ var monthsToPrint = 12;
 for (var monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
 
   //if the number of sheep (numSheep) is greater than or equal to 10,000
-  //if the number of sheep is less than 10,000 ignore this block 
+  //if the number of sheep is less than 10,000 ignore this block
   if(numSheep >= 10000 ) {
 
     //Divide the number of sheep by half
