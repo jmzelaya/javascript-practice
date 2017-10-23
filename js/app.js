@@ -293,3 +293,27 @@ while(ageIsCorrect === false){
     ageIsCorrect = true;
   }
 }
+
+
+//------------------------------------------//
+//   Level 4 - The Desert of Declarations   //
+//------------------------------------------//
+
+//-----------------------------------------//
+//-- 4.2 A BASIC MULTIPLICATION FUNCTION --//
+//-----------------------------------------//
+
+/* In the uniqueMath.js file, build a function
+declaration called multiplyTrio that takes in
+three parameters. Inside the function, multiply
+the numbers together into one product, and
+return the result. You may use whatever parameter
+and variable names you’d like.*/
+
+var a = 1;
+var b = 2;
+var c = 3;
+
+function multiplyTrio (a, b, c){
+	return a * b * c;
+}
