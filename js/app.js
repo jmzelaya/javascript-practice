@@ -216,9 +216,9 @@ for(var currentGen = 1	;	currentGen <= totalGen	;	currentGen++){
 //   Level 3 - Built-In's Bluff   //
 //--------------------------------//
 
-//------------------//
-//--POP-UP WINDOWS--//
-//------------------//
+//----------------------//
+//--3.2 POP-UP WINDOWS--//
+//----------------------//
 
 /* The Park Rangers at Badlands National Park
 have decided that the browser console is not
@@ -235,9 +235,9 @@ if (parkIsOpen) {
   alert("Sorry, the Badlands are particularly bad today. We're closed!");
 }
 
-//----------------------//
-//--POP-UP WINDOWS II --//
-//----------------------//
+//--------------------------//
+//--3.3 POP-UP WINDOWS II --//
+//--------------------------//
 
 /* In userProfile.js below, ask the user for their age with a pop-up window function, and store the user’s response in a variable called userAge. Use the following question in the dialog box:
 
@@ -246,9 +246,9 @@ When the correct dialog box pops up, enter your age to complete the challenge. *
 
 var userAge = prompt("What's your age, user?");
 
-//-----------------------//
-//--POP-UP WINDOWS III --//
-//-----------------------//
+//---------------------------//
+//--3.4 POP-UP WINDOWS III --//
+//---------------------------//
 
 /* With the userAge variable, we can ensure that the user has entered their age correctly. Use a pop-up window function to confirm the user entry with the following message:
 
@@ -260,3 +260,36 @@ Note: You do not need any loops or conditionals to complete this challenge. */
 var userAge = prompt("What's your age, user?");
 
 var ageIsCorrect = confirm("You entered " + userAge + ". Is this correct?");
+
+
+//------------------------------------//
+//-- 3.5 AN ENTRY CONFIRMATION LOOP --//
+//------------------------------------//
+
+/* We’ve learned to prompt the user for their age, and then confirm that their age has been entered correctly. Now we can use a while loop to improve the way this works.
+
+Create a while loop that will continue to execute as long as the user has not entered the correct age. Inside the loop, provide a confirmation that the age has been entered correctly:
+
+"You entered <age>. Is this correct?"
+If that confirmation statement is correct, then set ageIsCorrect to true and alert the following message:
+
+"Great! Your age is logged as <age>."
+Otherwise, the loop should continue to prompt a user to enter their age and assign that value to the userAge variable:
+
+"What's your age, user?" */
+
+
+
+var ageIsCorrect = false;
+
+while(ageIsCorrect === false){
+
+  var userAge = prompt("What's your age, user?");
+
+  if(confirm("You entered " + userAge + ". Is this correct?")) {
+
+    console.log("Great! Your age is logged as " + userAge + ".");
+
+    ageIsCorrect = true;
+  }
+}
