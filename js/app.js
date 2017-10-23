@@ -234,3 +234,29 @@ if (parkIsOpen) {
 } else {
   alert("Sorry, the Badlands are particularly bad today. We're closed!");
 }
+
+//----------------------//
+//--POP-UP WINDOWS II --//
+//----------------------//
+
+/* In userProfile.js below, ask the user for their age with a pop-up window function, and store the user’s response in a variable called userAge. Use the following question in the dialog box:
+
+"What's your age, user?"
+When the correct dialog box pops up, enter your age to complete the challenge. */
+
+var userAge = prompt("What's your age, user?");
+
+//-----------------------//
+//--POP-UP WINDOWS III --//
+//-----------------------//
+
+/* With the userAge variable, we can ensure that the user has entered their age correctly. Use a pop-up window function to confirm the user entry with the following message:
+
+"You entered <age>. Is this correct?"
+Then store the result of the confirmation in a variable called ageIsCorrect. When you submit your code, enter your age in the prompt window, and then use the confirmation to select whether the entry is correct or incorrect.
+
+Note: You do not need any loops or conditionals to complete this challenge. */
+
+var userAge = prompt("What's your age, user?");
+
+var ageIsCorrect = confirm("You entered " + userAge + ". Is this correct?");
