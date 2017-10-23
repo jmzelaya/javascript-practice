@@ -310,10 +310,31 @@ the numbers together into one product, and
 return the result. You may use whatever parameter
 and variable names you’d like.*/
 
-var a = 1;
-var b = 2;
-var c = 3;
+var a;
+var b;
+var c;
 
 function multiplyTrio (a, b, c){
 	return a * b * c;
 }
+
+
+//---------------------------//
+//-- 4.3 CALLING FUNCTIONS --//
+//---------------------------//
+
+
+/* Call your multiplyTrio function from the console
+using the numbers 8, 4, and 10. */
+
+multiplyTrio(8, 4, 10);
+
+//----------------------------//
+//-- 4.4 MORE DECLARACTIONS --//
+//----------------------------//
+
+/* Build a function declaration called maxOf2
+that takes in two numbers and returns the
+greater value. Be careful to think about the
+possibility of equality as well and return one
+of the numbers. */
