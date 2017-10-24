@@ -517,3 +517,5 @@ function numStrings(list) {
   }
 	return count;
 }
+
+//Off to JavaScript Road Trip Part 3 !
