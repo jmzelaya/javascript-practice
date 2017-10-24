@@ -152,21 +152,32 @@ console.log("EXCERCISE 2.7 HERE---->");
 var numSheep = 4;
 var monthsToPrint = 12;
 
+//Starting with monthNumber = 1; As long as monthNumber is less than monthsToPrint
+//Increment monthNumber
 for (var monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
 
+  //if monthNumber is a multiple of 4
   if(monthNumber % 4 === 0){
+    //sheepToRemove is 75% of the numSheep at the moment
     var sheepToRemove = numSheep * 0.75;
+    //Print the following message
     console.log("Removing " + sheepToRemove + " sheep from the population.");
+    //Substract 75% of the population
     numSheep = numSheep - sheepToRemove;
   }
 
+  //Otherwise if the population of sheep is greater than 10,000
   else if (numSheep > 10000) {
+    //The amount of sheep to remove is HALF of the current population
   	sheepToRemove = numSheep / 2;
+    //print the following message:
     console.log("Removing " + sheepToRemove + " sheep from the population.");
+    //Remove half of the population
     numSheep = numSheep - sheepToRemove;
   }
-
+  //After either conditional is met multiply the sheep population by 4.
   numSheep *= 4;
+  //Print this message
   console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
 }
 console.log("<----END EXCERCISE 2.7");
