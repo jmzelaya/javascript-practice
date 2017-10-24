@@ -411,9 +411,88 @@ Note: You do not need to call the function. Build the function declaration witho
 function changePowerTotal (totalPower, genId, genStatus, amtPower) {
   if(genStatus === "on") {
   	totalPower += amtPower;
-		alert("Generator #" + genId + " is now " + genStatus + ", adding " + amtPower + " MW, for a total of " + totalPower + " MW!");  } else {
+		alert("Generator #" + genId + " is now " + genStatus + ", adding " + amtPower + " MW, for a total of " + totalPower + " MW!");
+  } else {
   	totalPower -= amtPower;
     alert("Generator #" + genId + " is now " + genStatus + ", removing " + amtPower + " MW, for a total of " + totalPower + " MW!");
   }
   return totalPower;
 }
+
+
+//-------------------------------------//
+//   Level 5 - The Array Archipelago   //
+//-------------------------------------//
+
+//----------------------------------//
+//-- 5.2 ADJUSTING ARRAY CONTENTS --//
+//----------------------------------//
+
+/* In the following array, set one value of the array so that it will be a list of numbers in order.
+
+var list = [1, 2, 3, 7, 5, 6, 7, 8, 9]; */
+
+list[3] = "4";
+
+//---------------------------//
+//-- 5.3 ARRAY FUNCTIONS I --//
+//---------------------------//
+
+/* Using the specific array function that adds data to the back end of the array, add the next number to your newly corrected list.
+
+var list = [1, 2, 3, 4, 5, 6, 7, 8, 9] */
+
+list.push(10);
+
+
+//-------------------------//
+//-- 5.4 BUILDING ARRAYS --//
+//-------------------------//
+
+/*Create an array called values that contains the following contents in order:
+
+a String
+a Number
+a Boolean */
+
+var values = ["string", 2, false];
+
+
+
+//----------------------------//
+//-- 5.5 ARRAY FUNCTIONS II --//
+//----------------------------//
+
+/* Now using the specific array function that
+takes a piece of data off the back of an array,
+remove the last entry from your values array and
+store the result in a variable called bool. */
+
+var bool = values.pop(2);
+
+//---------------------//
+//-- 5.6 2D ARRAYS I --//
+//---------------------//
+
+/* Check out the following setup.
+Enter a line of code that declares a variable called infant
+and accesses the word "Baby" from eightiesMovies without
+making any changes to either element inside the array.
+
+var movie1 = [16, "Candles"];
+var movie2 = [3, "Men", "and", "a", "Baby"];
+var eightiesMovies = [movie1, movie2]; */
+
+var infant = eightiesMovies[1][4];
+
+//----------------------//
+//-- 5.7 2D ARRAYS II --//
+//----------------------//
+
+/* Now alert a string with the full title of the first movie in the eightiesMovies array, but only using the eightiesMovies variable to access the correct values. Use the concatenation operator to unite the words into one string, and remember to be attentive to necessary whitespace!
+
+var movie1 = [16, "Candles"];
+var movie2 = [3, "Men", "and", "a", "Baby"];
+var eightiesMovies = [movie1, movie2]; */
+
+alert(eightiesMovies[0][0] + " " + eightiesMovies[0][1]);
