@@ -206,17 +206,23 @@ The Generator is off. */
 var totalGen = 19;
 var totalMW = 0;
 
-
+//Starting at currentGen = 1, as long as it's less than the totalGen
+//Increment the currentGen
 for(var currentGen = 1	;	currentGen <= totalGen	;	currentGen++){
+  //If the currentGen is less than/equal to 4 AND it's an even number
   if(currentGen <= 4 && currentGen % 2 === 0){
+    //Add 62 to the totalMW
     totalMW += 62;
   	console.log("Generator #" + currentGen + " is on, adding 62 MW, for a total of " + totalMW + " MW!");
+    //Otherwise if the currentGen is greater than 4 but less than the total
+    //AND it's an even number
   } else if (currentGen > 4 <= totalGen && currentGen % 2 === 0) {
-  	totalMW += 124;
+    //Add 124 to the totalMW
+    totalMW += 124;
     console.log("Generator #" + currentGen + " is on, adding 124 MW, for a total of " + totalMW + " MW!");
 
   }
-
+    //If none of the above conditions are met print this message:
     else {
     	console.log("Generator #" + currentGen + " is off.");
     }
@@ -240,9 +246,13 @@ the user whether or not the park is open. */
 
 var parkIsOpen = false;
 
+//If the park IS open (meaning true)
 if (parkIsOpen) {
+  //Show THIS message:
   alert("Welcome to the Badlands National Park! Try to enjoy your stay.");
+  //If the park is NOT open (meaning false)
 } else {
+  //Show THIS message:
   alert("Sorry, the Badlands are particularly bad today. We're closed!");
 }
 
@@ -255,6 +265,7 @@ if (parkIsOpen) {
 "What's your age, user?"
 When the correct dialog box pops up, enter your age to complete the challenge. */
 
+//The variable userAge stores the input of the user's age
 var userAge = prompt("What's your age, user?");
 
 //---------------------------//
@@ -268,8 +279,10 @@ Then store the result of the confirmation in a variable called ageIsCorrect. Whe
 
 Note: You do not need any loops or conditionals to complete this challenge. */
 
+//Store the user's age in the variable userAge
 var userAge = prompt("What's your age, user?");
 
+//Check if the userAge is correct and store boolean
 var ageIsCorrect = confirm("You entered " + userAge + ". Is this correct?");
 
 
@@ -290,17 +303,21 @@ Otherwise, the loop should continue to prompt a user to enter their age and assi
 "What's your age, user?" */
 
 
-
+//Check if the userAge is correct and store boolean
 var ageIsCorrect = false;
 
+//As long as the userAge is incorrect
 while(ageIsCorrect === false){
-
+  //Prompt the user for their age
+  //Store it in the variable userAge
   var userAge = prompt("What's your age, user?");
 
+  //If the user confirms that they have inputted the correct age
   if(confirm("You entered " + userAge + ". Is this correct?")) {
-
+    //print this message
     console.log("Great! Your age is logged as " + userAge + ".");
 
+    //Change the ageIsCorrect variable to true
     ageIsCorrect = true;
   }
 }
